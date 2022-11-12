@@ -6,11 +6,27 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Form KTM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <fieldset>
+        <center><h1>Form Kartu Tanda Mahasiswa</h1></center>
+        <hr/>
+        <form action="/data" method="POST" enctype="multipart/form-data">
+            Nama    : <input type="text" name="varNama"/>
+            <br/><br/>
+            NIM  : <input type="text" name="varNIM"/>
+            <br/><br/>
+            Tanggal Lahir  : <input type="date" name="varTL"/>
+            <br/><br/>
+            Program Studi  : <input type="text" name="varPS"/>
+            <br/><br/>
+            Foto  : <input type="file" name="varFoto"/>
+            <br/><br/>
+            <input type="submit" value="SAVE"/>          
+        </form>
+        </fieldset>
     </body>
 </html>
