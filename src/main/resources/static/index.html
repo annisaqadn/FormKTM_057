@@ -11,21 +11,40 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <style>
+            fieldset{
+                width: 550px;
+                margin:  0px auto;
+                background-color: lightgoldenrodyellow;
+            }
+        </style>
         <fieldset>
         <center><h1>Form Kartu Tanda Mahasiswa</h1></center>
         <hr/>
         <form action="/data" method="POST" enctype="multipart/form-data">
-            Nama    : <input type="text" name="varNama"/>
-            <br/><br/>
-            NIM  : <input type="text" name="varNIM"/>
-            <br/><br/>
-            Tanggal Lahir  : <input type="date" name="varTL"/>
-            <br/><br/>
-            Program Studi  : <input type="text" name="varPS"/>
-            <br/><br/>
-            Foto  : <input type="file" name="varFoto"/>
-            <br/><br/>
-            <input type="submit" value="SAVE"/>          
+            <table>
+                <tr>
+                    <td><label for="varNama">Nama</label></td>
+                    <td><input type="text" name="varNama" placeholder="Masukkan Nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="varNIM">NIM</label></td>
+                    <td><input type="text" name="varNIM" placeholder="Masukkan NIM"></td>
+                </tr>
+                <tr>
+                    <td><label for="varTL">Tanggal Lahir</label></td>
+                    <td><input type="date" name="varTL"></td>
+                </tr
+                <tr>
+                    <td><label for="varPS">Program Studi</label></td>
+                    <td><input type="text" name="varPS" placeholder="Masukkan Program Studi"></td>
+                </tr>
+                <tr>
+                    <td><label for="varFoto">Foto</label></td>
+                    <td><input type="file" name="varFoto"></td>
+                </tr>
+            </table>
+            <p style="float: right"><input type="submit" value="KIRIM"/></p>  
         </form>
         </fieldset>
     </body>
