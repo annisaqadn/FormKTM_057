@@ -11,18 +11,28 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <style>
+            fieldset{
+                width: 550px;
+                margin:  0px auto;
+            }
+            img {
+                float: right;
+                width: 135px;
+                high: 253px;
+            }
+        </style>
         <fieldset>
         <Center><h1>Kartu Tanda Mahasiswa</h1></center>
         <hr/>
-            <l th:text="${paket1}"></l></p>
-            <br/>
-            <l th:text="${paket2}"></l></p>
-            <br/>
-            <l th:text="${paket3}"></l></p>
-            <br/>
-            <l th:text="${paket4}"></l></p>
-            <br/>
-            <center><img th:src="${paket5}"/></center>
+            <img th:src="${paket5}"/>
+            <l th:text="${paket1}"></l>
+            <br/><br/>
+            <l th:text="${paket3}"></l>
+            <br/><br/>
+            <l th:text="${paket2}"></l>
+            <br/><br/>
+            <l th:text="${paket4}"></l>
         </fieldset>
     </body>
 </html>
