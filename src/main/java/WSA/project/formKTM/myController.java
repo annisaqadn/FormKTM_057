@@ -30,7 +30,7 @@ public class myController {
                           @RequestParam("varE")String textE,
                           @RequestParam("varFoto")MultipartFile foto,
             Model kurir) throws IOException{
-        SimpleDateFormat tanggal = new SimpleDateFormat("EEEE-dd-MMMM-yyyy");
+        SimpleDateFormat tanggal = new SimpleDateFormat("dd MMMM yyyy");
         String tanggalLahir = tanggal.format(date);
         
         String blob = Base64.encodeBase64String(foto.getBytes());
