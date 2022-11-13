@@ -27,6 +27,7 @@ public class myController {
                           @RequestParam("varNIM")String textNIM,
                           @RequestParam("varTL")@DateTimeFormat(pattern="yyyy-MM-dd")Date date,
                           @RequestParam("varPS")String textPS,
+                          @RequestParam("varE")String textE,
                           @RequestParam("varFoto")MultipartFile foto,
             Model kurir) throws IOException{
         SimpleDateFormat tanggal = new SimpleDateFormat("EEEE-dd-MMMM-yyyy");
@@ -39,6 +40,7 @@ public class myController {
         kurir.addAttribute("paket2", textNIM);
         kurir.addAttribute("paket3", tanggalLahir);
         kurir.addAttribute("paket4", textPS);
+        kurir.addAttribute("paket6", textE);
         kurir.addAttribute("paket5", fotoKTM);
         
         return "viewpage";
