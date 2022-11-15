@@ -21,8 +21,14 @@ and open the template in the editor.
                 width: 154px;
                 high: 272px;
             }
+            #logo {
+                float : left;
+                width : 50px;
+                height: 70px;
+            }
         </style>
         <fieldset>
+            <img src="umy.png" id="logo"/>
         <Center><h1>Kartu Tanda Mahasiswa</h1></center>
         <hr/>
             <img th:src="${paket5}"/>
@@ -33,7 +39,7 @@ and open the template in the editor.
             <br/><br/>
             <l th:text="${paket4}"></l>
             <br/><br/>
-            <l th:text="${paket6}"></l>
+            <b><l th:text="${paket6}" style="color: darkblue"><b></l>
         </fieldset>
     </body>
 </html>
